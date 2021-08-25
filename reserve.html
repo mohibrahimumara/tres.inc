@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation-page</title>
+    <link rel="stylesheet" href="text/css" href="reservestyle.css">
+</head>
+<header></header>
+<style>
+    *{
+        padding:0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    header{
+        /* background-image: url(../code9ja/loginpic.jpg) no-repeat; */
+        background-size: cover; 
+        display: none;
+    }
+    body{
+        background-color: cornflowerblue;
+    }
+    .login-form{
+        width: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        color: #fff;
+    }
+    .login-form h1{
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        color: white;
+    }
+    .login-form p{
+        font-size: 20px;
+        margin: 15px 0;
+        color: white;
+    }
+
+    .login-form input, .login-form textarea{
+        font-size: 16px;
+        width: 100%;
+        padding: 15px 10px;
+        border: 0;
+        outline: none;
+        border-radius: 5px;
+    }
+    .login-form button{
+        font-size: 18px;
+        font-weight: bold;
+        margin: 20px 0;
+        padding: 10px 15px;
+        width: 50%;
+        border-radius: 5px;
+        border: 0;
+    }
+    .msg{
+        height: 150px;
+    }
+    .login-form button:hover{
+        color: #fff;
+        background-color: #2F3035;
+    }
+</style>
+<body>
+    <div class="login-form">
+        <h1>CONTACT MOHCODE</h1>
+        <form action="#" method="POST">
+            <p>NAME</p>
+            <input type="text" name="user" placeholder="Enter Your name">
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <p>MESSAGE</p>
+            <textarea  class="msg" type="text" name="message" placeholder="Enter Your Message Here"></textarea>
+            <button type="submit">Submit</button>  
+        </form>
+    </div>
+</body>
+</html>
